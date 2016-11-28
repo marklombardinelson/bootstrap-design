@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" @grid-float-breakpoint content="width=device-width, initial-scale=1">
     <title></title>
 
     <!-- Bootstrap -->
@@ -16,23 +16,18 @@
     <![endif]-->
     <style>
       /* A little styling to improve the design */
-
       .img-rounded {
         border-radius: 16px;
       }
-
       ul {
         margin: 0;
       }
-
       .pagination {
         margin: 0;
       }
-
       table {
         font-size: inherit;
       }
-
       .login-well {
         display: flex;
         justify-content: space-between;
@@ -44,9 +39,222 @@
     </style>
   </head>
   <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">TIY Sports</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Players</a></li>
+            <li><a href="#">Games</a></li>
+          </ul>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="">
+              <button type="button" class="btn btn-default" aria-label="Left Align"></button
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </div>
+             </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-xs-8 col-md-9">
+            <h1>TIY Sports</h1>
+            <h5 class="h4-responsive">&hearts; For the students of The Iron Yard</h5>
+          </div>
+          <div class="col-xs-4 col-md-3">
+            <img src="assets/images/sports.jpg" class="img-circle" alt="Hurdles In Water" width="136" height="136">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/football.jpg" alt="Playing Football">
+            <div class="caption">
+              <h3 class = "text-center">Football</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/baseball.jpg" alt="Baseball Stadium">
+            <div class="caption">
+                <h3 class = "text-center">Baseball</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/basketball.jpg" alt="Basketball Hoop">
+            <div class="caption">
+              <h3 class = "text-center">Basketball</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/quidditch.jpg" alt="Harry Potter Playing Quidditch">
+            <div class="caption">
+              <h3 class = "text-center">Quidditch</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-warning" role="alert">
+        <p class="lead">We've added some brand new features in version 2.0!<a href="#" class="small"> Learn More</a></p>
+      </div>
+      <div class="well">
+        <div class="row">
+          <div class="col-xs-8 col-md-6">
+            <h5><span class="glyphicon glyphicon-user"></span> Please <strong>log in</strong> to edit</h5>
+          </div>
+          <div class="col-xs-4 col-md-6 text-right">
+            <button class="btn btn-primary" type="button"><span class="fa fa-awesome" aria-hidden="true"></span>
+              Facebook</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <div class="row">
+              <div class="col-xs-9 col-md-6">
+                <span class="fa fa-chevron-circle-right"></span> Teams
+              </div>
+              <div class="col-xs-3 col-md-6 text-right">
+                <span class="badge">317 Teams</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="assets/images/dartboard.png" alt="Dartboard" height="60">
+              </a>
+            </div>
+            <div class="media-body">
+              <div class="row">
+                <div class="col-xs-8 col-md-9">
+                  <h4 class="media-heading">Tampa Dart Dynamos</h4>Sesame snaps wafer oat cake macaroon lollipop brownie candy. Muffin topping powder cupcake apple pie jujubes.
+                </div>
+                <div class="col-xs-4 col-md-3 text-right">
+                  <span class="badge">8 Players</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="assets/images/pingpong.jpg" alt="Will Ferril Playing PingPong" height="70">
+              </a>
+            </div>
+            <div class="media-body">
+              <div class="row">
+                <div class="col-xs-8 col-md-9">
+                  <h4 class="media-heading">St Pete Ping Pong Power House</h4>Muffin topping powder cupcake apple pie jujubes. Powder cupcake pastry jelly beans tiramisu liquorice chupa chups topping.
+                </div>
+                <div class="col-xs-4 col-md-3 text-right">
+                  <span class="badge">6 Players</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="assets/images/golf.jpg" alt="Golf Course" height="40">
+              </a>
+            </div>
+            <div class="media-body">
+              <div class="row">
+                <div class="col-xs-8 col-md-9">
+                  <h4 class="media-heading">Orlando Gold Gang</h4>Powder cupcake pastry jelly beans tiramisu liquorice chupa chups topping.
+                </div>
+                <div class="col-xs-4 col-md-3 text-right">
+                  <span class="badge">6 Players</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer text-center">
+          <ul class="pagination">
+            <li><a href="#"><<</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li class="active"><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">>></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4><span class="glyphicon glyphicon-check"></span> Games
+          </h4>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+            <th>#</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Score</th>
+           </tr>
+          </thead>
+          <tbody>
+            <tr class = "success">
+              <td>1</td>
+              <td>Tampa Dart Dynamos</td>
+              <td>Buffalo BullsEyes</td>
+              <td>20-17</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>St Pete Ping Pong Power House</td>
+              <td>Philly Paddlers</td>
+              <td>18-12</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Orlando Golf Gang</td>
+              <td>Portland Putters</td>
+              <td>2-1</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
